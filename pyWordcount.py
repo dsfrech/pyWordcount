@@ -7,7 +7,7 @@ import sqlite3 as sl
 import sys
 
 filename = 'alice.txt'
-stripChars = ':*,?!.-;/\|][{}+_()&^%$#@~`<>“"'+"'"      # note ' " and “
+stripChars = ':*,?!.-;/\\|][{}+_()&^%$#@~`<>“"'+"'"      # note ' " and “
 
 try:
     with open(filename, encoding='utf-8') as f:
