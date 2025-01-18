@@ -15,8 +15,8 @@ try:
 except FileNotFoundError:
     print(f'Sorry, the file {filename} does not exist.')
 else:
-    contents = contents.lower()                         # make all lower case
-    words = contents.split()                            # make a list of the words
+    words = contents.lower().split()                    # make all lower case
+#    words = contents.split()                            # make a list of the words
 
     unsorted = ''
     for w in words:
