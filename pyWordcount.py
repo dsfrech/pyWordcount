@@ -61,6 +61,9 @@ with con:
     data = con.execute("SELECT * FROM WORDS WHERE count > 200 ORDER BY count")
     for row in data:
         print(row)
+    data = con.execute("SELECT * FROM WORDS WHERE count > 200 ORDER BY word")
+    for row in data:
+        print(row)
 
 # filename = 'programming.txt'
 # with open(filename, 'w') as file_object:
